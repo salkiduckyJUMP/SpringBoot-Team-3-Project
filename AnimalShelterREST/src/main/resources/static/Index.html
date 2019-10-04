@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- USING BOOTSTRAP 4 -->
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="Index.js"></script>
+        <script src="update.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Index.css">
+        <title>Animal Shelter</title>
+    </head>
+    <body class="containter-fluid bg-light" onload="initialize()">
+        <!-- ToolBar - using Bootstrap NavBar -->
+        <nav class="navbar navbar-expand-md bg-info navbar-light fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand font-weight-bold" href="#">Animal Shelter</a>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <!-- Create Dropdown -->
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Add to Our Site
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" onclick="createNewAnimal('animal')" href="#">Add an Animal</a>
+                    <a class="dropdown-item" onclick="createNewAnimal('shelter')" href="#">Add a Shelter</a>
+                    <a class="dropdown-item" onclick="createNewAnimal('staff')" href="#">Add Staff</a>
+                    <a class="dropdown-item" onclick="createNewAnimal('foster')" href="#">Add Foster</a>
+                </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content Below -->
+        <div id="pageLayout" class="d-flex row" style="padding-top: 5%">
+            <!-- Cards Displayed on Left -->
+            <div id="cardGroup" class = "col-md-9 p2"> 
+                <div class = "text-center" id="animals"></div>
+                <div class = "text-center" id="locations"></div>
+                <div class = "text-center" id="staff"></div>
+                <div class = "text-center" id="fosters"></div>
+            </div>
+            <!-- About Us Displayed on Right -->
+            <div id="aboutUs" class="col-md-3 p2 sticky"></div>
+        </div>
+    </body>
+</html>

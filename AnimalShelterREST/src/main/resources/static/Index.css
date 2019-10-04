@@ -1,0 +1,80 @@
+.carousel-control-prev,
+.carousel-control-next{
+  align-items: flex-start ; /* Aligns it at the top */
+  top: 50%;
+  height: 3rem;
+  width: 3rem;
+  outline: black;
+  background-size: 10%, 10%;
+  border-radius: 10%;
+  border: 1px solid black;
+  background: white;
+  filter: invert(100%);
+}
+
+.carousel-control-next:after
+{
+  content: '>>';
+  font-size: 2rem;
+  color: red;
+}
+
+.carousel-control-prev:after 
+{
+  content: '<<';
+  font-size: 2rem;
+  color: red;
+}
+
+.bg-dark,.bg-primary{
+  color: whitesmoke;
+}
+
+div.sticky{
+  position: fixed;
+  right: 0;
+  padding: 2% 2% 2% 2%;
+}
+
+h1,h2,h3{
+  text-align: center;
+  justify-content: center;
+}
+
+.card-header{
+  font-weight: bolder;
+}
+
+.navbar{
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+
+.dropdown-item:hover{
+	background-color: Gold;
+}
+
+.card {
+  transition: box-shadow .3s;
+  width: 300px;
+  height: 500px;
+  margin: 50px;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+.card:hover {
+  box-shadow: 0 0 15px rgba(33,33,33,.7); 
+}
+
+.btn-group, .card-footer{
+  justify-items: flex-end;
+  display: inline-flexbox;
+  flex-wrap: inherit;
+}
